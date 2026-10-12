@@ -1,0 +1,15 @@
+======================================================================
+B2C E-TİCARET SİSTEMİ - GEMINI ANALİZ RAPORU
+======================================================================
+
+[KULLANICI TALEBİ]
+Mavi renkli, su geçirmez, 50 litre kapasiteli kamp çantamızı
+sisteme ekleyelim, fiyatı girmene gerek yok.
+
+[GEMINI JSON ÇIKTISI]
+{
+  "urun_adi": "50L Su Geçirmez Kamp ve Dağcılık Sırt Çantası - Mavi",
+  "kategori": "Spor & Outdoor > Kamp Malzemeleri > Kamp Çantaları",
+  "seo_etiketleri": "kamp çantası, su geçirmez sırt çantası, 50 litre outdoor çanta",
+  "satis_aciklamasi": "Geniş 50 litrelik iç hacmi ve üstün su geçirmez kumaşı sayesinde tüm ekipmanlarınızı en zorlu hava koşullarında bile güvenle korur. Ergonomik sırt desteği ve dengeli yük dağılımı ile doğa yürüyüşlerinizde maksimum konfor sunar."
+}
