@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Hafta3.MainWindow"
+        Title="Hafta3">
+
+    <StackPanel Margin="20" Spacing="20" Orientation="Horizontal" VerticalAlignment="Top">
+        <StackPanel Spacing="20">
+            <TextBox x:Name="textBox1" Width="150" />
+            <TextBox x:Name="textBox2" Width="150" />
+
+            <Button Click="Button1_Click" Width="150">
+                button1
+            </Button>
+        </StackPanel>
+
+        <ListBox x:Name="listBox1" Width="150" MinHeight="200" />
+
+        <StackPanel Spacing="20">
+            <Button Click="Button2_Click" Width="150">button2</Button>
+            <TextBox x:Name="textBox3" Width="150" />
+        </StackPanel>
+
+        <ListBox x:Name="listBox2" SelectionMode="Multiple,Toggle" SelectionChanged="ListBox2_SelectionChanged" Width="150" MinHeight="200">
+            <ListBoxItem>istanbul</ListBoxItem>
+            <ListBoxItem>ankara</ListBoxItem>
+            <ListBoxItem>van</ListBoxItem>
+            <ListBoxItem>çankırı</ListBoxItem>
+        </ListBox>
+        <ListBox x:Name="listBox3" SelectionMode="Multiple,Toggle" Width="150" MinHeight="200" />
+
+        <Button Click="Button3_Click" Width="150">button3</Button>
+    </StackPanel>
+</Window>
