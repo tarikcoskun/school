@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DersUygulamalari.Hafta4.Form2"
+        Title="Hafta 4">
+
+  <StackPanel Margin="20" Spacing="20" Orientation="Horizontal" VerticalAlignment="Top">
+    <StackPanel Spacing="20">
+      <TextBox x:Name="textBox1" Width="500" Text="marmara üniversitesi yapay zeka operatörlüğü" />
+      <TextBox x:Name="textBox2" Width="500" />
+
+      <Button Click="Button1_Click" Width="500">
+        button1
+      </Button>
+    </StackPanel>
+  </StackPanel>
+</Window>

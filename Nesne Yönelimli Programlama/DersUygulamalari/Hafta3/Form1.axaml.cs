@@ -4,11 +4,11 @@ using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
-namespace Hafta3;
+namespace DersUygulamalari.Hafta3;
 
-public partial class MainWindow : Window
+public partial class Form1 : Window
 {
-    public MainWindow()
+    public Form1()
     {
         InitializeComponent();
     }
@@ -107,7 +107,7 @@ public partial class MainWindow : Window
 
     List<string> secimler = new List<string>();
 
-    private void ListBox2_SelectionChanged(object? sender, SelectionChangedEventArgs e)
+    private void ListBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         foreach (ListBoxItem item in e.AddedItems)
         {
@@ -120,7 +120,7 @@ public partial class MainWindow : Window
         }
     }
 
-    private void Button3_Click(object? sender, RoutedEventArgs e)
+    private void Button3_Click(object sender, RoutedEventArgs e)
     {
         listBox3.Items.Clear();
 

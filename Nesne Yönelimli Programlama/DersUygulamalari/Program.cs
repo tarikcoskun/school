@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Hafta3;
+namespace DersUygulamalari;
 
 class Program
 {

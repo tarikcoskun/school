@@ -1,8 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using DersUygulamalari.Hafta3;
+using DersUygulamalari.Hafta4;
 
-namespace Hafta3;
+namespace DersUygulamalari;
 
 public partial class App : Application
 {
