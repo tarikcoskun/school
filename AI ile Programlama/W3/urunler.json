@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "urun_adi": "Apple MacBook Pro Dizüstü Bilgisayar",
+    "kategori": "Elektronik > Bilgisayar > Laptop & Notebook",
+    "seo_etiketleri": "macbook pro, apple laptop, dizüstü bilgisayar",
+    "satis_aciklamasi": "Yüksek performansı ve göz alıcı ekran kalitesiyle profesyonel işlerinizi en üst seviyeye taşıyın. Tüm gün süren pil ömrü ve şık taşınabilir tasarımı sayesinde sınır tanımadan üretken kalın.",
+    "urun_kodu": "URN-0001",
+    "fiyat": 100000.0,
+    "stok": 80
+  }
+]

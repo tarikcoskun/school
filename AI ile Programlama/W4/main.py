@@ -37,7 +37,8 @@ def kod_optimize_et(spagetti_kod: str):
         contents=spagetti_kod,
         config=types.GenerateContentConfig(
           system_instruction=SISTEM_MESAJI,
-          temperature=0.2
+          automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
+          temperature=0.2,
         )
       )
 
