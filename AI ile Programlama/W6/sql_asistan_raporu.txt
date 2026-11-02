@@ -1,0 +1,17 @@
+AKILLI SQL ASİSTANI PERFORMANS VE GÜVENLİK RAPORU
+--------------------------------------------------
+Çalıştırma Tarihi   : 2026-11-02
+Veritabanı Hacmi    : 1.000 Müşteri / 1.000 Sipariş
+Toplam Test Talebi  : 1
+Başarılı İcra       : 1
+Engellenen Saldırı  : 0
+Hata Düzeltme Sayısı: 0
+
+TEST DETAYLARI:
+[TEST 1] 1000 Veride İcra Süresi: 0.000 saniye | Durum: BAŞARILI
+  Talep: istanbul'da bulunan soyadı Demir olan müşterileri getir
+  SQL  : SELECT * FROM musteriler WHERE sehir = 'İstanbul' and ad_soyad LIKE '% Demir'
+
+KISA YORUM VE DEĞERLENDİRME:
+SQL üretimi ortalama 0.95 saniye sürdü
+Üretilen SQL'lerin SQLite üzerindeki icra süresi ortalama 0.29 ms'dir.
