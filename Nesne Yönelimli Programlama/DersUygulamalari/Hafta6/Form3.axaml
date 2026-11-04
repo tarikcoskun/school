@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:local="using:DersUygulamalari.Hafta6"
+        x:Class="DersUygulamalari.Hafta6.Form3"
+        Title="Hafta 6"
+        Loaded="Form3_Load">
+
+  <StackPanel Margin="20" Spacing="20" Orientation="Horizontal" VerticalAlignment="Top">
+    <StackPanel Spacing="20">
+      <TextBox x:Name="textBox1" Width="500" />
+
+      <ListBox x:Name="listBox1" Width="500" MinHeight="200" />
+
+      <CalendarDatePicker x:Name="dateTimePicker1" Width="250">
+        <CalendarDatePicker.TextConverter>
+          <local:TarihFormatConverter Format="d MMMM yyyy dddd" Culture="tr-TR" />
+        </CalendarDatePicker.TextConverter>
+      </CalendarDatePicker>
+      <CalendarDatePicker x:Name="dateTimePicker2" Width="250">
+        <CalendarDatePicker.TextConverter>
+          <local:TarihFormatConverter Format="d.MM.yyyy" Culture="tr-TR" />
+        </CalendarDatePicker.TextConverter>
+      </CalendarDatePicker>
+      <TimePicker x:Name="dateTimePicker3" ClockIdentifier="24HourClock" UseSeconds="True" />
+    </StackPanel>
+  </StackPanel>
+</Window>
