@@ -1,0 +1,20 @@
+{
+  "file": "samples/sql_injection.py",
+  "finding_count": 1,
+  "risk_summary": {
+    "Kritik": 1,
+    "Yüksek": 0,
+    "Orta": 0,
+    "Düşük": 0
+  },
+  "findings": [
+    {
+      "type": "SQL Injection",
+      "severity": "Kritik",
+      "evidence": "sorgu = f\"SELECT * FROM kullanicilar WHERE ad = '{kullanici_adi}' AND parola = '{parola}'\"",
+      "cause": "Kullanıcıdan alınan girdiler, veritabanı sorgu metnine doğrudan string formatlaması (f-string) ile güvenilmeyen bir şekilde dahil edilmiştir.",
+      "impact": "Saldırgan kimlik doğrulama mekanizmasını atlayabilir, veritabanındaki tüm verilere erişebilir, bunları değiştirebilir veya silebilir.",
+      "secure_code": "def kullanici_getir(kullanici_adi, parola):\n    conn = sqlite3.connect(\"uygulama.db\")\n    cur = conn.cursor()\n    sorgu = \"SELECT * FROM kullanicilar WHERE ad = ? AND parola = ?\"\n    cur.execute(sorgu, (kullanici_adi, parola))\n    return cur.fetchone()"
+    }
+  ]
+}
