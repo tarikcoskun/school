@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DersUygulamalari.Hafta3.Form3_EnUzunSehir"
+        Title="Hafta 3 - En Uzun Şehir"
+        Opened="Form3_EnUzunSehir_Opened">
+
+  <StackPanel Margin="20"
+              Spacing="20"
+              Orientation="Horizontal">
+
+    <ListBox x:Name="listBox1" Width="150" />
+
+    <Button Click="Button1_Click">
+      En Uzun Şehri Bul
+    </Button>
+
+    <ListBox x:Name="listBox2" Width="150" />
+  </StackPanel>
+</Window>

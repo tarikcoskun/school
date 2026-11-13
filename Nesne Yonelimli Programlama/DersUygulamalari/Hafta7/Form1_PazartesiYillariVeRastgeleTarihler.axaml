@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DersUygulamalari.Hafta7.Form1_PazartesiYillariVeRastgeleTarihler"
+        Title="Hafta 7 - Pazartesi Yılları ve Rastgele Tarihler">
+
+  <StackPanel Margin="20"
+              Spacing="20"
+              Orientation="Horizontal">
+
+    <StackPanel Spacing="10">
+      <TextBox x:Name="textBox1" PlaceholderText="Başlangıç yılı" Width="150" />
+      <TextBox x:Name="textBox2" PlaceholderText="Bitiş yılı" Width="150" />
+
+      <Button Click="Button1_Click" Width="150">
+        Bul
+      </Button>
+    </StackPanel>
+
+    <ListBox x:Name="listBox1" Width="150" />
+
+    <StackPanel Spacing="10">
+      <TextBox x:Name="textBox3" PlaceholderText="En küçük yıl" Width="150" />
+      <TextBox x:Name="textBox4" PlaceholderText="En büyük yıl" Width="150" />
+
+      <Button Click="Button2_Click" Width="150">
+        Çalıştır
+      </Button>
+    </StackPanel>
+
+    <ListBox x:Name="listBox2" Width="150" />
+    <ListBox x:Name="listBox3" Width="150" />
+  </StackPanel>
+</Window>

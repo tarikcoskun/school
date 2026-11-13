@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:converters="using:DersUygulamalari.Converters"
+        x:Class="DersUygulamalari.Hafta6.Form4_YasHesaplama"
+        Title="Hafta 6 - Yaş Hesaplama">
+
+  <StackPanel Margin="20"
+              Spacing="20"
+              Orientation="Horizontal">
+
+    <StackPanel Spacing="10">
+      <CalendarDatePicker x:Name="dateTimePicker1" PlaceholderText="Doğum tarihi" Width="500">
+        <CalendarDatePicker.TextConverter>
+          <converters:DateFormatConverter Format="d MMMM yyyy dddd" Culture="tr-TR" />
+        </CalendarDatePicker.TextConverter>
+      </CalendarDatePicker>
+
+      <Button Click="Button1_Click" Width="500">
+        Hesapla
+      </Button>
+
+      <TextBlock x:Name="label1" Width="500" TextWrapping="Wrap" />
+    </StackPanel>
+  </StackPanel>
+</Window>

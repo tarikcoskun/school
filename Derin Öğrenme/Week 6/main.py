@@ -174,8 +174,8 @@ def plot_best(path, title, label, res, x, y):
     fig, axes = plt.subplots(1, 3, figsize=(16, 4.5))
     epochs = np.arange(1, len(res["mse_hist"]) + 1)
 
-    axes[0].semilogy(epochs, res["mse_hist"], color="tab:blue")
-    axes[0].set(title="Epoch / MSE (log)", xlabel="Epoch", ylabel="MSE")
+    axes[0].plot(epochs, res["mse_hist"], color="tab:blue")
+    axes[0].set(title="Epoch / MSE", xlabel="Epoch", ylabel="MSE")
     axes[0].grid(True, which="both", alpha=0.3)
 
     axes[1].plot(x, y, "k-", label="Hedef")
@@ -221,11 +221,11 @@ def plot_comparison(path, title, rows, x, y):
     axes[1].plot(x, y, "k-", lw=2.5, label="Hedef")
     for label, res in rows:
         epochs = np.arange(1, len(res["mse_hist"]) + 1)
-        axes[0].semilogy(epochs, res["mse_hist"], label=label)
+        axes[0].plot(epochs, res["mse_hist"], label=label)
         axes[1].plot(x, res["out"], "--", label=label)
         axes[2].plot(epochs, res["r2_hist"], label=label)
 
-    axes[0].set(title="Epoch / MSE (log)", xlabel="Epoch", ylabel="MSE")
+    axes[0].set(title="Epoch / MSE", xlabel="Epoch", ylabel="MSE")
     axes[1].set(title="Hedef - Çıkış", xlabel="p", ylabel="y")
     axes[2].set(title="Epoch / R²", xlabel="Epoch", ylabel="R²", ylim=(-0.1, 1.02))
     for ax in axes:

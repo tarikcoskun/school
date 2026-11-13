@@ -1,0 +1,22 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="DersUygulamalari.App"
+             RequestedThemeVariant="Light">
+    <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+        <FluentTheme />
+        <Style Selector=":is(Window) > StackPanel > :is(Control)">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+        <Style Selector=":is(Window) > StackPanel > ListBox">
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+
+        <!-- ListBox'lara TextBox'larla aynı kenarlık. -->
+        <Style Selector="ListBox">
+            <Setter Property="BorderBrush" Value="{DynamicResource TextControlBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="{DynamicResource TextControlBorderThemeThickness}"/>
+        </Style>
+    </Application.Styles>
+</Application>

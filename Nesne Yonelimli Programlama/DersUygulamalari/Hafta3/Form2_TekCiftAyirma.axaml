@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DersUygulamalari.Hafta3.Form2_TekCiftAyirma"
+        Title="Hafta 3 - Tek-Çift Ayırma">
+
+  <StackPanel Margin="20"
+              Spacing="20"
+              Orientation="Horizontal">
+
+    <Button Click="Button1_Click">
+      Sayı Üret
+    </Button>
+
+    <ListBox x:Name="listBox1"
+             Width="150" />
+
+    <Button Click="Button2_Click">
+      Tek-Çift Ayır
+    </Button>
+
+    <ListBox x:Name="listBox2" Width="150" />
+    <ListBox x:Name="listBox3" Width="150" />
+  </StackPanel>
+</Window>

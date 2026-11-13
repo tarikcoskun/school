@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:converters="using:DersUygulamalari.Converters"
+        x:Class="DersUygulamalari.Hafta6.Form3_TarihSaatIslemleri"
+        Title="Hafta 6 - Tarih / Saat İşlemleri"
+        Opened="Form3_TarihSaatIslemleri_Opened">
+
+  <StackPanel Margin="20"
+              Spacing="20"
+              Orientation="Horizontal">
+
+    <StackPanel Spacing="10">
+      <CalendarDatePicker x:Name="dateTimePicker1" Width="250">
+        <CalendarDatePicker.TextConverter>
+          <converters:DateFormatConverter Format="d MMMM yyyy dddd" Culture="tr-TR" />
+        </CalendarDatePicker.TextConverter>
+      </CalendarDatePicker>
+
+      <CalendarDatePicker x:Name="dateTimePicker2" Width="250">
+        <CalendarDatePicker.TextConverter>
+          <converters:DateFormatConverter Format="d.MM.yyyy" Culture="tr-TR" />
+        </CalendarDatePicker.TextConverter>
+      </CalendarDatePicker>
+
+      <TimePicker x:Name="dateTimePicker3" ClockIdentifier="24HourClock" UseSeconds="True" />
+
+      <TextBlock x:Name="label1" Width="250" TextWrapping="Wrap" />
+    </StackPanel>
+
+    <ListBox x:Name="listBox1" Width="500" />
+  </StackPanel>
+</Window>

@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DersUygulamalari.Hafta3.Form4_SecilenleriTasima"
+        Title="Hafta 3 - Seçilenleri Taşıma"
+        Opened="Form4_SecilenleriTasima_Opened">
+
+  <StackPanel Margin="20"
+              Spacing="20"
+              Orientation="Horizontal">
+
+    <ListBox x:Name="listBox1"
+             SelectionMode="Multiple,Toggle"
+             SelectionChanged="ListBox1_SelectionChanged"
+             Width="150" />
+
+    <Button Click="Button1_Click" VerticalAlignment="Center">
+      >
+    </Button>
+
+    <ListBox x:Name="listBox2"
+             SelectionMode="Multiple,Toggle"
+             Width="150" />
+
+  </StackPanel>
+</Window>
